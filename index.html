@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Working draft of the joint DocAgents and AgentDM call for papers for COLING 2027.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#102820">
+  <title>Agents4DocData at COLING 2027 — Draft Joint Call for Papers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Agents4DocData home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>Agents4DocData</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#scope">Scope</a>
+        <a href="#topics">Topics</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#organizers">Organizer notes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>Working draft</span> · COLING 2027</div>
+          <h1>Agents for documents.<br>Agents for data.<br><em>Evidence people can check.</em></h1>
+          <p class="lede">A proposed joint call for papers from the DocAgents and AgentDM communities on language and multimodal agents that interpret documents, analyse structured data, and carry out verifiable tasks.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#topics">Explore topics</a>
+            <a class="button button-secondary" href="#organizers">Review decisions</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration connecting document evidence to structured data">
+          <div class="paper-card paper-card-back">
+            <span class="paper-line w-60"></span>
+            <span class="paper-line w-80"></span>
+            <span class="paper-line w-45"></span>
+          </div>
+          <div class="paper-card paper-card-front">
+            <span class="card-label">DOCUMENT EVIDENCE</span>
+            <span class="paper-title"></span>
+            <span class="paper-line w-80"></span>
+            <span class="paper-line w-60"></span>
+            <span class="paper-chart">
+              <i style="height:35%"></i><i style="height:72%"></i><i style="height:52%"></i><i style="height:88%"></i>
+            </span>
+            <span class="paper-footnote"></span>
+          </div>
+          <div class="data-card">
+            <span class="card-label">STRUCTURED ANALYSIS</span>
+            <span class="query-line">SELECT evidence</span>
+            <span class="query-line muted">FROM records</span>
+            <span class="query-line muted">WHERE claim = verified</span>
+            <span class="result-pill">✓ Reproducible</span>
+          </div>
+          <svg class="connector" viewBox="0 0 180 110" aria-hidden="true">
+            <path d="M8 15 C75 15, 55 90, 166 90"></path>
+            <circle cx="8" cy="15" r="5"></circle>
+            <circle cx="166" cy="90" r="5"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-note shell">
+        <strong>For organizer review.</strong> This page is not yet the official call for papers. DocAgents and AgentDM organizers are invited to edit the scope and topics before circulation.
+      </div>
+    </section>
+
+    <section class="section intro" id="scope">
+      <div class="shell narrow">
+        <p class="section-kicker">Proposed wording for the call</p>
+        <h2>One workflow, two research traditions</h2>
+        <p>The joint DocAgents and AgentDM workshop at COLING 2027 invites work on language and multimodal agents that interpret documents, analyse structured data, and carry out tasks whose results people can check. DocAgents brings research on how agents read pages, interpret layout and visual evidence, and act on information distributed across documents. AgentDM brings research on how agents turn a natural-language goal into an executable analysis over tables, databases, graphs, time series, or spatiotemporal records. Both communities ask how an agent decides what to do next, checks the result of an action, and explains what warrants its conclusion.</p>
+
+        <aside class="example-card">
+          <div class="example-number">01</div>
+          <div>
+            <h3>A motivating example</h3>
+            <p>Consider an analyst asking why a reported increase in demand appears in one region but not another. A document agent might trace the claim from a chart to a footnote that changes the definition of demand. A data-mining agent might query the underlying records, align the reporting periods, and test whether the regional difference persists.</p>
+            <p>The conclusion depends on both reading the qualification correctly and performing a valid comparison. A system that exposes the footnote, query, and calculation gives the analyst a way to check each step.</p>
+          </div>
+        </aside>
+
+        <p>We welcome contributions to either research area and to their intersection. A study of evidence localisation in degraded documents, an agent that designs forecasting experiments on time series, and a system that reconciles reports with database records are all within scope. Contributions may address an individual research problem or an end-to-end workflow.</p>
+      </div>
+    </section>
+
+    <section class="section topics-section" id="topics">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Topics of interest</p>
+            <h2>From source evidence to defensible decisions</h2>
+          </div>
+          <p>We welcome focused contributions within either community as well as systems that connect documents and structured data.</p>
+        </div>
+
+        <div class="track-grid">
+          <article class="track track-document">
+            <div class="track-top">
+              <span class="track-icon" aria-hidden="true">D</span>
+              <div>
+                <p class="track-label">Research track 01</p>
+                <h3>Document intelligence and grounded reasoning</h3>
+              </div>
+            </div>
+
+            <div class="topic">
+              <h4>Document extraction and multimodal, multi-page understanding</h4>
+              <p>Reading text, layout, tables, charts, and images together. Topics include OCR-based and OCR-free extraction of text, entities, key-value pairs, and tables while preserving links to source evidence. It includes following references between pages in long documents, linking captions and footnotes to the right visual elements and recovering the structure of complex or noisy documents.</p>
+            </div>
+            <div class="topic">
+              <h4>Evidence selection and attribution</h4>
+              <p>Retrieving the pages or regions needed for a multi-hop question, citing evidence at the level of a passage, table cell, or figure, and checking whether it supports the extracted information and the answer. We welcome work on confidence estimation and on asking a human expert to resolve ambiguity.</p>
+            </div>
+            <div class="topic">
+              <h4>Multilingual, low-resource, and specialised documents</h4>
+              <p>Methods and resources for rare scripts, endangered languages, historical archives, and technical documents. Relevant questions include how errors propagate from recognition and extraction to downstream reasoning and how well a method transfers across scripts, layouts, and domains.</p>
+            </div>
+          </article>
+
+          <article class="track track-data">
+            <div class="track-top">
+              <span class="track-icon" aria-hidden="true">A</span>
+              <div>
+                <p class="track-label">Research track 02</p>
+                <h3>Autonomous mining of structured data</h3>
+              </div>
+            </div>
+
+            <div class="topic">
+              <h4>Grounding goals and planning analyses</h4>
+              <p>Mapping a user’s request to schemas, entities, time windows, and executable operations. Topics include semantic parsing, task decomposition, model selection, workflow synthesis, and agents that revise a plan in light of intermediate results.</p>
+            </div>
+            <div class="topic">
+              <h4>Discovery, prediction, and decision support</h4>
+              <p>Agents that formulate and test hypotheses, mine relational patterns, detect anomalies, forecast changes, or design experiments. We welcome studies on tables and databases as well as graphs, time series, and spatiotemporal data, including how agents choose suitable comparisons and validate discoveries.</p>
+            </div>
+            <div class="topic">
+              <h4>Analytical tools, memory, and collaboration</h4>
+              <p>Integrating SQL, Python, databases, retrieval systems, and statistical or predictive models. Topics include maintaining state across an analysis, coordinating specialised agents, and allowing an analyst to inspect, correct, or resume a workflow.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shared-section">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Shared research questions</p>
+            <h2>Where the communities meet</h2>
+          </div>
+        </div>
+        <div class="shared-grid">
+          <article>
+            <span class="number">01</span>
+            <h3>Linking evidence across sources</h3>
+            <p>How can an agent connect a statement in a report to the correct entity, unit, date, and record in a database? We invite work on preserving provenance when extracted information becomes structured records, reconciling definitions, and handling conflicting or missing evidence.</p>
+          </article>
+          <article>
+            <span class="number">02</span>
+            <h3>Tool choice, verification, and recovery</h3>
+            <p>When should an agent read another page, query a database, rerun a calculation, or ask for clarification? We welcome methods for checking intermediate actions, revising failed plans, and recording enough provenance for another person to reproduce the result.</p>
+          </article>
+          <article>
+            <span class="number">03</span>
+            <h3>Evaluation of the full workflow</h3>
+            <p>Datasets, benchmarks, simulators, and error analyses that distinguish perception, extraction, or retrieval failures from planning, execution, and interpretation errors. We welcome realistic, noisy, multi-page document collections. Measures of interest include task success, extraction accuracy, citation accuracy, numerical and statistical validity, calibration, and generalisation under distribution shift.</p>
+          </article>
+          <article>
+            <span class="number">04</span>
+            <h3>Responsible and efficient deployment</h3>
+            <p>Privacy-preserving extraction and analysis, fairness and bias analysis, human oversight, audit trails, and regulatory compliance. We welcome deployment studies that report accuracy alongside latency, cost, and scale, as well as negative results from settings such as finance, healthcare, law, science, education, and urban systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contributions-section" id="contributions">
+      <div class="shell contributions-grid">
+        <div>
+          <p class="section-kicker">Types of contribution</p>
+          <h2>Many forms of useful evidence</h2>
+        </div>
+        <div>
+          <p>We invite methods and systems papers, datasets and evaluation protocols, empirical and reproducibility studies, deployment reports, analyses of failures or negative results, and position papers that formulate concrete research questions for either community.</p>
+          <div class="tags" aria-label="Contribution types">
+            <span>Methods &amp; systems</span>
+            <span>Datasets</span>
+            <span>Evaluation protocols</span>
+            <span>Reproducibility studies</span>
+            <span>Deployment reports</span>
+            <span>Failure analyses</span>
+            <span>Position papers</span>
+          </div>
+          <p class="small-note">Benchmark contributions are welcome as regular papers. Neither proposal envisages a shared task for this edition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section organizers-section" id="organizers">
+      <div class="shell">
+        <div class="organizer-heading">
+          <div>
+            <p class="section-kicker">Planning call</p>
+            <h2>Decisions for the organizers</h2>
+          </div>
+          <span class="draft-badge">Internal working notes</span>
+        </div>
+
+        <div class="decision-grid">
+          <article class="decision-card">
+            <div class="decision-head">
+              <span>01</span>
+              <h3>First call and submission details</h3>
+            </div>
+            <p>Each team could review its specialist topics and nominate one organizer to edit the common scope. The timetable circulated by DocAgents lists 21 November 2026 for the first call, 21 December for the second call, and 5 January 2027 for direct submissions.</p>
+            <p>For the public CFP, confirm the submission link, deadline time zone, paper categories and lengths, archival options, and the ARR commitment deadline. The DocAgents proposal envisages both direct submissions and ARR commitments through OpenReview. The two teams should agree on these routes for the joint workshop.</p>
+            <div class="proposed-dates">
+              <div><strong>21 Nov 2026</strong><span>First call</span></div>
+              <div><strong>21 Dec 2026</strong><span>Second call</span></div>
+              <div><strong>05 Jan 2027</strong><span>Direct submissions</span></div>
+            </div>
+          </article>
+
+          <article class="decision-card">
+            <div class="decision-head">
+              <span>02</span>
+              <h3>One-day programme</h3>
+            </div>
+            <p>One option is to open with two complementary invited perspectives, one on grounding decisions in document evidence and one on autonomous discovery over structured data. A morning session on methods and evaluation could mix papers from both communities. Afternoon spotlights and posters could focus on systems, applications, and lessons from deployment.</p>
+            <blockquote>When an agent’s conclusion is challenged, what should a document reader, a data analyst, or an end user be able to inspect or rerun?</blockquote>
+            <p>Both teams could reconfirm speaker availability for COLING before announcing names or allocating slots.</p>
+          </article>
+
+          <article class="decision-card decision-wide">
+            <div class="decision-head">
+              <span>03</span>
+              <h3>Reviewing and division of work</h3>
+            </div>
+            <div class="decision-columns">
+              <p>Both proposals plan for three reviews per submission and a maximum load of three papers per reviewer. The two teams could pool their reviewer lists, identify gaps in coverage, and assign cross-cutting papers to reviewers with complementary expertise.</p>
+              <p>On the call, we could also identify reusable website or mailing-list materials and agree who will maintain the joint CFP and website, configure OpenReview, coordinate invitations, and circulate the call to each community.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>Agents4DocData</span>
+        </a>
+        <p>Draft joint call for papers · COLING 2027</p>
+      </div>
+      <p class="footer-note">Prepared for discussion by the DocAgents and AgentDM organizers. Not yet an official call for papers.</p>
+    </div>
+  </footer>
+</body>
+</html>
